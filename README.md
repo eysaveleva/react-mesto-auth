@@ -1,7 +1,20 @@
-# Здесь будет ваш проект на Реакте с авторизацией и регистрацией
+# Проект: Место React
 
-Используйте ваши предыдущие наработки по проекту Mesto. Это может быть работа 11-го спринта или его улучшенная версия после 2-х последних спринтов. 
+### Описание
 
-Все запросы на авторизацию, регистрацию и проверку токена должны работать через сервис `https://auth.nomoreparties.co`. Остальные запросы, не относящиеся к этой проектной работе могут быть к бэкенду из предыдущих спринтов.
+Проект представляет собой адаптивный сайт - разрабатывался как перенос существующего функционала на React с авторизацией и регистрацией
 
-Успехов!
+[ссылка](https://eysaveleva.github.io/mesto-react/)
+
+
+## Available Scripts
+
+### `npm start`
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
