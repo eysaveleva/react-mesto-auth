@@ -7,20 +7,20 @@ const checkServerResponse = (res) => {
     return Promise.reject(`Ошибка: ${res.status}`);
 }
 
-export const registration = ({password, email}) => {
-  return fetch(`${BASE_URL}/signup`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-      },
-    body: JSON.stringify({password, email})
+export const registration = ({ password, email }) => {
+    return fetch(`${BASE_URL}/signup`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ password, email })
     })
-    .then(checkServerResponse)
+        .then(checkServerResponse)
 };
 
-export const login = ({password, email}) => {
-  console.log(password);
-  console.log(email);
+export const login = ({ password, email }) => {
+    console.log(password);
+    console.log(email);
 
     return fetch(`${BASE_URL}/signin`, {
         method: 'POST',

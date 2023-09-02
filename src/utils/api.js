@@ -9,7 +9,7 @@ class Api {
 
   _checkResponse(res) {
     if (res.ok) {
-        return Promise.resolve(res.json());
+      return Promise.resolve(res.json());
     }
     return Promise.reject(`Ошибка: ${res.status}`);
   }
@@ -41,7 +41,7 @@ class Api {
     return this._request(`${this._userUrl}/avatar`, {
       method: 'PATCH',
       headers: this._headers,
-      body: JSON.stringify({avatar : link})
+      body: JSON.stringify({ avatar: link })
     })
   }
 
@@ -85,8 +85,8 @@ class Api {
 const api = new Api({
   baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-70',
   headers: {
-  authorization: '70b5a854-9915-4cad-abf7-c60ff6335d2e',
-  'Content-Type': 'application/json'
+    authorization: '70b5a854-9915-4cad-abf7-c60ff6335d2e',
+    'Content-Type': 'application/json'
   }
 });
 
